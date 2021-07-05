@@ -1,0 +1,16 @@
+1) request - 
+	method - get
+	url https://stripe-example.hopto.org/api/profiles
+   response - array of profiles
+
+2) request - 
+	method - patch
+	url - https://stripe-example.hopto.org/api/update-profile/${profileId}
+	body - JSON object with profile object properties ({"name": "..."});
+ You can add one or more profile properties to body;
+   response - profile object that you have just changed;
+
+	
+
+	
+	

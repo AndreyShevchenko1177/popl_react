@@ -1,0 +1,14 @@
+technologies:
+-react
+-redux
+-material ui
+
+accounts page:
+-editable fields: name, email, bio (save changes by "Enter" keyboard button click or "Done" button on card)
+-links in responce will be presented as social(for "personal" mode) and "business" (for "business" mode):
+    social: [1,2,3,4,5],
+    business: [1,2,3,4,5],
+    (Я отправлю тебе 5 фоток с id(название картинки) которому они соответствуют. сохранишь их в проекте и будешь рендерить  в зависимости от id в массиве)
+-accounts cards should be draggable
+-links should be draggable
+
