@@ -2,8 +2,7 @@ import { createStore, combineReducers, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 
 function usersDataReducer(state, action) {
-    console.group("STATE - ACTION");
-    console.log(state);
+    console.group("ACTION");
     console.log(action);
     console.groupEnd();
 
@@ -12,7 +11,7 @@ function usersDataReducer(state, action) {
     }
 
     if (action.type === "GETDATA") {
-        return [action.data];
+        return [...action.data];
     }
 
     return state;
@@ -23,7 +22,6 @@ function promiseReducer(state = {}, action) {
         return {};
     }
 
-    // if (["LOGOUT", "LOGIN"].includes(action.type)) return {};
     if (action.type === "PROMISE") {
         const { name = "default", status, payload, error } = action;
         if (status) {

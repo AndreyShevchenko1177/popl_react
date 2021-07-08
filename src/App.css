@@ -2,9 +2,10 @@ body {
     font-family: "Asap", sans-serif;
 }
 
-/* div {
+div {
     border: 1px solid red;
-} */
+    margin: 5px;
+}
 
 .wrapper {
     display: flex;
