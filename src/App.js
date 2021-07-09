@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import { Provider } from "react-redux";
 import {
     // BrowserRouter as Router, // https://stackoverflow.com/questions/42701129/how-to-push-to-history-in-react-router-v4
@@ -20,9 +20,7 @@ function App() {
             <Provider store={store}>
                 <Router history={history}>
                     <div className="wrapper">
-                        <div className="sideBar">
-                            <Sidebar />
-                        </div>
+                        <Sidebar />
                         <div className="content">
                             <Switch>
                                 <Route path="/accounts" component={Accounts} exact />

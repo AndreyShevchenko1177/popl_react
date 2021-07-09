@@ -2,9 +2,9 @@ import { createStore, combineReducers, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 
 function usersDataReducer(state, action) {
-    console.group("ACTION");
-    console.log(action);
-    console.groupEnd();
+    // console.group("ACTION");
+    // console.log(action);
+    // console.groupEnd();
 
     if (state === undefined) {
         return [];

@@ -1,0 +1,244 @@
+body {
+    font-family: "Asap", sans-serif;
+    background-color: rgb(241, 243, 244);
+    // background-color: lightgreen;
+}
+
+// div {
+//     border: 1px solid red;
+//     /* background-color: #fff; */
+//     border-radius: 7px;
+//     margin: 10px;
+// }
+
+.wrapper {
+    display: flex;
+    >:nth-child(2){
+        flex-basis: 100%;
+    }
+}
+
+.sideBar {
+    width: 320px;
+    margin: 20px;
+
+    img {
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+    }
+    >:nth-child(1) > div{
+        margin-bottom: 40px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #000 ;
+
+    :hover {
+        cursor: pointer;
+    }
+}
+
+.menuItem{
+    opacity: 0.6;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    img{
+        width: 20px;
+        height: 20px;
+    }
+
+    >:first-child{
+        margin-right: 10px;
+    }
+
+    >:last-child{
+        flex-basis: 100%;
+        text-align: right;
+    }
+
+    :nth-child(n){
+        height: 60px;
+    }
+    .sidebarCount{
+        display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    }
+}
+
+.menuItem:hover{
+    background: linear-gradient(to right, #000000 30%, #949494 80%);
+    color: white;
+
+    img{
+        filter: invert(100%);
+    }
+}
+
+.content {
+    width: inherit;
+    margin-top: 30px;
+    margin-right: 30px;
+}
+
+.accounts{
+    padding: 5px;
+}
+
+.searchInput {
+    
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    padding: 7px;
+    margin-left: auto;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 5px 3px rgba(0,0,0,0.1);
+    border-radius: 10px;
+
+
+    input{
+        align-self: center;
+        width: 100%;
+        outline:none;
+        border: 0 solid white;
+        margin: 0 10px;
+    }      
+    
+    img{
+        width: 20px;
+        margin: 5px;
+    }
+}
+
+.userItem {
+    background-color: white;
+    margin: 0 0 40px 0;
+    padding: 20px;
+    box-shadow: 0 5px 3px rgba(0,0,0,0.1);
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: space-between;
+
+    .personalData{
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .label{
+            position: absolute;
+            left: 25px;
+            top: 25px;
+
+            img{
+                width: 30px;
+                box-shadow: 0 4px 5px rgba(0,0,0,0.3);
+            }
+        }
+
+        .userAva{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 1px solid grey;
+            overflow: hidden;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px;
+
+            img{
+                display: inline-block;
+                max-height: 100px;
+                max-width: 100px;
+            }
+        }
+
+        .nameContacts{
+            font-size: 1.4em;
+            // text-decoration: underline;
+
+            :first-child{
+                font-weight: bold;
+            }
+
+            :nth-child(n+2){
+                opacity: 0.6;
+            }
+        }
+    }
+
+    .links{
+        padding-left: 30px;
+
+        img{
+            max-height: 50px;
+            max-width: 50px;
+            margin: 10px;
+        }
+    }
+
+    .control{
+
+        display: flex;
+
+        :first-child{
+            img{
+                max-height: 40px;
+                max-width: 40px;
+                margin-right: 30px;
+            }
+        }
+
+
+        .checkBox{
+            font-size: 1.2em;
+            background-color: rgb(100, 100, 100);
+            padding: 3px 15px 3px 5px;
+            color: white;
+
+            :first-child{
+                margin-right: 10px;
+                margin-left: 5px;
+            }
+
+            
+        }
+        
+        .counts{
+            width: 130px;
+            padding: 2px 5px 2px 5px;
+            border: 2px solid rgb(100, 100, 100);
+        }
+
+        .rightPanel{
+            div{
+                margin: 10px 0;
+                border-radius: 7px;
+            }
+
+            :nth-child(2){
+                margin-bottom: 30px;
+            }
+            
+        }
+    }
+}
+
+
+
+* {
+    transition: all 0.1s linear;
+}
